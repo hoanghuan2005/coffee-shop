@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* CSS CHUNG CHO DỰ ÁN */
+/* cf = coffee */
+.cf-top-menu-item {
+  @apply cursor-pointer py-0.5 hover:text-gray-800 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5
+     hover:after:bg-light-coffee after:transition-all after:ease-in-out after:duration-300;
+}
+
+.cf-cart-icon {
+  @apply w-4 h-4 inline-block;
+}
+
+.cf-badge {
+  @apply text-xs text-center rounded-full px-1;
+}
