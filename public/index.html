@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Shop</title>
+    <link rel="icon" href="./images/favicon/coffee_icon.webp" sizes="16x16" />
     <link href="./output.css" type="text/css" rel="stylesheet" />
+    <script src="./main.js" type="text/javascript" async></script>
   </head>
   <body>
     <div id="root">
       <div
-        class="content-wrapper max-w-7xl text-base mx-auto px-8 bg-slate-100"
+        class="content-wrapper font-Karla max-w-7xl text-base mx-auto px-8 bg-slate-100"
       >
         <header class="py-6 mx-10">
-          <nav class="flex flex-row justify-between items-center">
+          <nav class="flex flex-row justify-between items-center relative">
             <div
               class="logo basis-2/6 text-center text-2xl font-semibold cursor-pointer"
             >
@@ -21,10 +23,11 @@
 
             <!-- Menu -->
             <ul
-              class="flex basis-3/6 items-center justify-end gap-8 text-sm font-medium text-gray-500"
+              id="cf-top-menu"
+              class="hidden lg:flex basis-3/6 lg:items-center lg:justify-end lg:gap-8 text-sm font-medium text-gray-500 animate-slideTop"
             >
               <li class="cf-top-menu-item">
-                <a href="#">HOME</a>
+                <a href="https://github.com/hoanghuan2005/coffee-shop" target="_blank">HOME</a>
               </li>
               <li class="cf-top-menu-item"><a href="#">OUR PRODUCTS</a></li>
               <li class="cf-top-menu-item"><a href="#">BLOG</a></li>
@@ -35,7 +38,7 @@
 
             <!-- Cart -->
             <ul
-              class="basis-1/6 uppercase flex justify-start items-center ml-12 text-gray-500 font-medium"
+              class="basis-3/6 lg:basis-1/6 uppercase flex justify-end lg:justify-start items-center ml-12 text-gray-500 font-medium"
             >
               <li class="cf-top-menu-item">
                 <a href="" class="flex items-center">
@@ -58,6 +61,26 @@
                 </a>
               </li>
             </ul>
+
+            <div
+              class="menu-responsive basis-1/6 lg:hidden flex items-center cursor-pointer"
+            >
+              <svg
+                id="cf-toggle-menu-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="cf-icon ml-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
           </nav>
         </header>
         <!-- End Header-->
