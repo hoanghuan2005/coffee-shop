@@ -24,6 +24,9 @@ module.exports = {
         slideDown: "slideDown 0.3s ease-in-out",
         slideTop: "slideTop 0.3s ease-in-out",
       },
+      backgroundImage: {
+        "bg-image": "url('./images/bg-image.jpg')",
+      },
     },
   },
   plugins: [],
