@@ -31,3 +31,15 @@
 .cf-badge {
   @apply text-xs text-center rounded-full px-1;
 }
+
+.cf-subline {
+  @apply flex justify-center items-center pb-24;
+}
+
+.cf-subline-line {
+  @apply w-9 h-[1px] bg-gray-300;
+}
+
+.cf-subline-label {
+  @apply uppercase mx-3 tracking-widest text-gray-500 text-[12px] font-bold text-center;
+}
